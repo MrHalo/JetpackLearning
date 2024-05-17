@@ -16,3 +16,4 @@ rootProject.name = "KotlinDemo1"
 include ':app'
 include ':viewmodeldemo'
 include ':viewbindingdemo'
+include ':databindingdemo'
