@@ -54,6 +54,10 @@ class AdvertisingActivity : AppCompatActivity() {
 
             }
 
+        /**
+         * 在Kotlin中，it是一个隐式参数，通常用于Lambda表达式或单参数的匿名函数中。它表示Lambda表达式中的单个参数，
+         * 特别是在Lambda表达式中只有一个参数时，可以使用it来代替参数名，从而简化代码。
+         */
         advertisingViewModel?._timingResult?.observe(this, Observer {
 
             tvAdvertising.text = "广告剩余$it 秒"
