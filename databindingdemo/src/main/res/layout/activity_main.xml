@@ -65,11 +65,16 @@
 
         <ImageView
             android:id="@+id/iv_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@mipmap/ic_launcher"
-            app:imageUrl="@{user.userPhoto}"/>
-
+            app:imageUrl="@{user.userPhoto}"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:imageUrl="@{user.userPhoto}"
+            android:gender="@{user.gender}"/>
 
     </LinearLayout>
 </layout>

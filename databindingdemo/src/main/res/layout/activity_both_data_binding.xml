@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user1"
+            type="com.cr.databindingdemo.bean.User1" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BothDataBindingActivity">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:text="@={user1.userName}"/>
+
+        <EditText
+            android:id="@+id/et_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户id"
+            android:text="@={user1.userId}"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user1.userName}" />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{user1.userId}" />
+    </LinearLayout>
+</layout>
